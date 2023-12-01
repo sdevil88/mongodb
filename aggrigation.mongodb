@@ -1,0 +1,48 @@
+use("mernstack")
+
+//aggrigation
+
+
+//find data using $match 
+
+
+// db.person.aggregate([
+//     {
+//         $match: {
+//           gender: "male"
+//         }
+//     },
+//     {
+//         $project: {
+//           name:1,
+//           gender:1,
+//          _id:0
+//         },
+//     },
+// ])
+
+
+
+
+// db.person.aggregate([
+//     {
+//         $match: {
+//           gender:"male"
+//         },
+//     },
+
+//     {
+//         $project: {
+//           fullname:{$concat :["$name.first"," ","$name.last"]}
+//         ,gender:1,
+//         _id:0
+//         }
+//     }
+
+
+// ])
+
+
+
+
+
