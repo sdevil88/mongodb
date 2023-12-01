@@ -66,9 +66,9 @@ use("mernstack")
 // }
 // ])
 
-// undind method 2
-
-// db.fruits.aggregate([
+// undind method 2 
+  
+// db.fruits.aggregate([ 
 //   {$match: {
 //     name: "Apple"
 //   },
