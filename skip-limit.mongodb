@@ -1,0 +1,167 @@
+use("mernstack")
+
+//aggrigation
+
+
+//find data using $match 
+
+
+// db.person.aggregate([
+//     {
+//         $match: {
+//           gender: "male"
+//         }
+//     },
+//     {
+//         $project: {
+//           name:1,
+//           gender:1,
+//          _id:0
+//         },
+//     },
+// ])
+
+
+
+
+// db.person.aggregate([
+//     {
+//         $match: {
+//           gender:"male"
+//         },
+//     },
+
+//     {
+//         $project: {
+//           fullname:{$concat :["$name.first"," ","$name.last"]}
+//         ,gender:1,
+//         _id:0
+//         }
+//     }
+
+
+// ])
+
+
+
+
+
+
+// db.person.aggregate([
+//     {
+//         $match: {
+//           gender:"male"
+//         },
+//     },
+
+//     {
+//         $project: {
+//           fullname:{$concat :["$name.first"," ","$name.last"]}
+//         ,   
+        
+//         gender:1,
+//         usergender:"$gender",
+//         username:"$login.username",
+//         currentage:"$dob.age",
+//         regester : "$regestered.date",
+//         _id:0
+//         }
+//     }
+
+
+// ])
+
+
+
+
+//limit
+
+
+
+
+
+// db.person.aggregate([
+//     {
+//         $match: {
+//           gender:"male"
+//         },
+//     },
+//     {
+//         $limit:5
+//     },
+
+//     {
+//         $project: {
+//           fullname:{$concat :["$name.first"," ","$name.last"]}
+//         ,   
+        
+//         gender:1,
+//         usergender:"$gender",
+//         username:"$login.username",
+//         currentage:"$dob.age",
+//         regester : "$regestered.date",
+//         _id:0
+//         }
+//     }
+
+
+// ])
+
+
+//using skip and limit
+
+// let page = 2
+// let limit = 4
+// let skip = (page-1)*limit
+
+
+// db.person.aggregate([
+//     {
+//         $match: {
+//           gender:"male"
+//         },
+//     },
+//     {
+//         $skip: skip,
+//     },
+//     {
+//         $limit:limit
+//     },
+
+//     {
+//         $project: {
+//           fullname:{$concat :["$name.first"," ","$name.last"]}
+//         ,   
+        
+//         gender:1,
+//         usergender:"$gender",
+//         username:"$login.username",
+//         currentage:"$dob.age",
+//         regester : "$regestered.date",
+//         _id:0
+//         }
+//     }
+
+
+// ])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
